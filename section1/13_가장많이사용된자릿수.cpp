@@ -15,10 +15,8 @@ int main() {
 	
 	int max_val = -1, max_num = -1;
 	for(int i=0; i<10; i++) {
-		if(max_num < arr[i]) {
+		if(max_num <= arr[i]) {
 			max_num = arr[i];
-			max_val = i;
-		} else if(max_num == arr[i]) {
 			max_val = max(i, max_val);
 		}
 	}
